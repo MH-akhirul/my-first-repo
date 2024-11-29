@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is my first repo </title>
     <style>
+        body {
+            background-color:black ;
+        }
         .main-content{
           text-align: center;  
         }
@@ -15,7 +18,8 @@
         }
         .main-content a{
             background-color:khaki;
-         padding:20px 30px ;
+            padding:20px 30px ;
+            border-radius: 10px;
         }
         .btn {
             margin-top: 40px;
@@ -26,11 +30,23 @@
             font-weight: bold;
             text-decoration: none;
         }
+        .main-content a:hover{
+            background-color: blue;
+            color: azure;
+            border-radius: 10px;
+
+        }
+        .main-content span {
+            color:red;
+        }
+        h1,p {
+            color: azure;
+        }
     </style>
 </head>
-<body>
+<body >
 <div class="main-content">
-    <h1>Welcome to my Git Hub profile</h1>
+    <h1>Welcome to my <span>Git Hub</span> profile</h1>
     <img src="images/my-bg.png">
     <p>Learning HTML with Git Hub</p>
     <div class="btn">
