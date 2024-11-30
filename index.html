@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is my first repo </title>
+    
     <style>
+        
         body {
             background-color:black ;
         }
@@ -12,7 +14,7 @@
           text-align: center;  
         }
         .main-content img{ 
-              width: 400px; }
+              width: 350px; }
         .main-content p{
             font-size:18px;
             font-weight: bold;
@@ -46,16 +48,35 @@
         br {
             display: none;
         }
+       
     </style>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body >
 <div class="main-content">
     <h1>Welcome to my <br> <span>Git Hub</span> profile</h1>
-    <img src="images/my-bg.png">
-    <p>Learning HTML with Git Hub</p>
-    <div class="btn">
+    <div>
+        <img  data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"" src="images/my-bg.png" alt="img">
+
+    </div>
+    <div data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" >
+        <p>Learning HTML with Git Hub</p>
+    </div>
+    <div data-aos="fade-up"
+    data-aos-duration="3000" class="btn">
         <a href="https://github.com/MH-akhirul"> Follow my GitHub profile</a>
     </div>
+
 </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
